@@ -1,0 +1,36 @@
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial', sans-serif;
+    --cellsize: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    background-color: #1f1f1f;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, td{
+    /* border: 1px solid gray; */
+    background-color: #fff;
+    width: var(--cellsize);
+    height: var(--cellsize);
+}
