@@ -5,15 +5,22 @@
     <title>SandSim</title>
 
     <link rel="stylesheet" href="sand.css">
+    <script src="BoardStates.js"></script>
+    <script src="Cell.js"></script>
+    <script src="draw.js"></script>
+
 </head>
 <body>
     <h1>SandSim</h1>
     <table id="grid-container" class="grid-container"></table>
+    <div class="controls">
+        <button id="go">GO</button>
+        <button id="stop">STOP</button>
+        <button id="reset">RESET</button>
+    </div>
 
-    <script src="draw.js"></script>
     <script>
         setup();
-        // createGrid(10, 10)
     </script>
 </body>
 </html>

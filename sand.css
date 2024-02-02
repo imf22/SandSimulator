@@ -14,13 +14,14 @@
 
 html{
     background-color: #1f1f1f;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
 h1{
+    text-align: center;
     color: #fff;
 }
 
@@ -33,4 +34,17 @@ tr, td{
     background-color: #fff;
     width: var(--cellsize);
     height: var(--cellsize);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button{
+    width: 5em;
+    height: 2em;
+    border-radius: 1em;
+    margin: 1em 0.25em;
 }
