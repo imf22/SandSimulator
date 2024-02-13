@@ -65,11 +65,6 @@ function stepEvent(){
     updateBoard(newBoard)
 
 
-    // // Update cell data
-    // updateBoardCells(newBoard);
-
-    // // Update table visuals
-    // updateBoardVisuals();
 }
 
 // Creates a 2d array
@@ -104,13 +99,13 @@ function createGrid(cols, rows){
         for (let j = 0; j < rows; j++) {
             let tdNode = document.createElement("td");
 
-            // Add dom element to cell
+            // Add dom element to cell obj
             cells_data[i][j].setDomElement(tdNode);
 
             // Add click event to each cell
             (function (x,y){
                 tdNode.addEventListener('click', function () {
-                    console.log(`Clicked ${x}, ${y}`);
+                    cells_data[x][y].doElementClick();
                 })
             })(i,j);
 
@@ -122,7 +117,7 @@ function createGrid(cols, rows){
     }
 }
 
-// Updates the each Cell objects stored in the table(cell_data)
+// Updates each Cell objects stored in the table(cell_data)
 function updateBoardCells(arrData2d){
     if(arrData2d == null || arrData2d.length == 0) return -1;
     for (let i = 0; i < arrData2d.length; i++) {

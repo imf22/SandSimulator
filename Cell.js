@@ -26,4 +26,8 @@ class Cell{
     getDomElement(){
         return this.dom_element;
     }
+
+    doElementClick(){
+        console.log(`Clicked cell at ${this.x}, ${this.y}`);
+    }
 }
